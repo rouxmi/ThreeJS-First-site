@@ -80,7 +80,7 @@ export default class Preloader extends EventEmitter{
             this.timeline.to(".intro-text .animatedis", {
                 yPercent: 0,
                 stagger: 0.05,
-                ease: "back.out(1.7)",
+                ease: "back.out(1.2)",
             }).to(".arrow-svg-wrapper", {
                 opacity: 1,
             },"fondu").to(".toggle-bar", {
@@ -100,7 +100,7 @@ export default class Preloader extends EventEmitter{
             this.secondtimeline.to(".intro-text .animatedis", {
                 yPercent: 500,
                 stagger: 0.05,
-                ease: "back.in(1.7)",
+                ease: "back.in(1.2)",
             },"fadeout").to(".arrow-svg-wrapper", {
                 opacity: 0,
             },"fadeout").to(this.room.position, {
@@ -131,24 +131,30 @@ export default class Preloader extends EventEmitter{
             }).to(".hero-main-title .animatedis", {
                 yPercent: 0,
                 stagger: 0.05,
-                ease: "back.out(1.7)",
+                ease: "back.out(1.2)",
             },"text").to(".hero-main-description .animatedis", {
                 yPercent: 0,
                 stagger: 0.05,
-                ease: "back.out(1.7)",
+                ease: "back.out(1.2)",
             },"text").to(".first-sub .animatedis", {
                 yPercent: 0,
                 stagger: 0.05,
-                ease: "back.out(1.7)",
+                ease: "back.out(1.2)",
             },"text").to(".second-sub .animatedis", {
                 yPercent: 0,
                 stagger: 0.05,
-                ease: "back.out(1.7)",
+                ease: "back.out(1.2)",
             },"text").set(this.roomChildren.mini_floor.scale, {
                 x: 1,
                 y: 1,
                 z: 1,
-            }).to(this.roomChildren.aquarium.scale, {
+            }).to(this.roomChildren.computer.scale, {
+                x: 1,
+                y: 1,
+                z: 1,
+                ease: "back.out(2.2)",
+                duration: 0.5,
+            },">-1.1").to(this.roomChildren.aquarium.scale, {
                 x: 1,
                 y: 1,
                 z: 1,
@@ -178,13 +184,7 @@ export default class Preloader extends EventEmitter{
                 z: 1,
                 ease: "back.out(2.2)",
                 duration: 0.5,
-            },">-1.05").to(this.roomChildren.computer.scale, {
-                x: 1,
-                y: 1,
-                z: 1,
-                ease: "back.out(2.2)",
-                duration: 0.5,
-            },">-1.1").to(this.roomChildren.desks.scale, {
+            },">-1.05").to(this.roomChildren.desks.scale, {
                 x: 1,
                 y: 1,
                 z: 1,
