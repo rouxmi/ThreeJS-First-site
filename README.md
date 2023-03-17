@@ -2,19 +2,22 @@
 
 A clone of  Andrew Woan Site (also bokoko33 clone) using his tutorial
 
-#Credit
+# Credit
 
-[bokoko33 original site](https://bokoko33.me/)
+[Bokoko33 original site](https://bokoko33.me/)
 
 [Andrew Woan tutorial](https://www.youtube.com/watch?v=rxTb9ys834w)
 
-#Deploy
+# Deploy
 
-[a deploy version](https://three-js-first-site.vercel.app/)
+[A deploy version](https://three-js-first-site.vercel.app/)
 
-#Install localy
+# Install localy
 
-download and execute in root
+Download and execute in root the following command:
 
+
+````shell
 $ npm install
 $ npm run dev
+````
